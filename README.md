@@ -1,5 +1,8 @@
 
-Command : npx expo start
+Command : npx expo start ,
+
+
+
 Screen Recording : https://drive.google.com/file/d/1GCkR2rGg1OcA_2mZYC1tJgLCTBinAVnC/view?usp=drive_link
 
 
