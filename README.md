@@ -1,52 +1,42 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Command : npx expo start
+Screen Recording : https://drive.google.com/file/d/1GCkR2rGg1OcA_2mZYC1tJgLCTBinAVnC/view?usp=drive_link
 
-## Get started
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+🚀 Features
+Create and manage Businesses and their Articles
 
-   ```bash
-   npx expo start
-   ```
+Offline-first experience with local data storage using RxDB
 
-In the output, you'll find options to open the app in a
+Seamless sync to CouchDB when the device is back online
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Network detection using @react-native-community/netinfo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Data consistency with document versioning and conflict handling
 
-## Get a fresh project
+📦 Tech Stack
+React Native (with Expo)
 
-When you're ready, run:
+RxDB (with SQLite as storage engine)
 
-```bash
-npm run reset-project
-```
+CouchDB (for cloud-based replication)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+NetInfo (network monitoring)
 
-## Learn more
+uuid (for generating document IDs)
 
-To learn more about developing your project with Expo, look at the following resources:
+▶️ How to Run the Project
+1. Install CouchDB
+Download and install CouchDB: https://couchdb.apache.org/
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Access CouchDB at: http://127.0.0.1:5984/_utils
 
-## Join the community
+Create two databases manually:
 
-Join our community of developers creating universal apps.
+businesses
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# mereHumsafarApp
-# Offline-Crud-App
+articles
+
+Enable CORS in CouchDB configuration if you're testing on a physical device.
